@@ -355,6 +355,23 @@
         }
     </style>
 </head>
+
+<!-- Auto-Sort Gallery -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector(".gallery-container"); // adjust if needed
+    const items = Array.from(container.querySelectorAll(".gallery-item"));
+
+    items.sort((a, b) => {
+        const titleA = a.dataset.title.toLowerCase();
+        const titleB = b.dataset.title.toLowerCase();
+        return titleA.localeCompare(titleB);
+    });
+
+    items.forEach(item => container.appendChild(item));
+});
+</script>
+
 <body>
 
     <nav id="navbar">
@@ -394,7 +411,7 @@
             <div class="gallery-filters">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="photography">Photography</button>
-                <button class="filter-btn" data-filter="drones">Drones</button>
+                <button class="filter-btn" data-filter="drones">drones</button>
                 <button class="filter-btn" data-filter="work">Work</button>
             </div>
             <div class="layout-switcher">
@@ -426,146 +443,974 @@
         <!-- inside this div. The JS picks them up automatically.                     -->
         <div id="gallerySource" style="display:none;">
 
-            <!-- Gallery item: Wedding_by_the_Gondolas_cmr40p -->
-            <div class="gallery-item" data-category="photography" data-title="Wedding_by_the_Gondolas_cmr40p" data-tag="Landscapes" data-aspect="square">
-                <!-- Cloudinary URL with path-based transformations. -->
-                <img src="https://res.cloudinary.com/dhpyzfyge/image/upload/w_800,h_600,c_fit,q_auto,f_auto/v1777172785/Wedding_by_the_Gondolas_cmr40p.jpg" alt="Wedding_by_the_Gondolas_cmr40p" loading="lazy">
+            <!-- Gallery item: Country Pastels -->
+            <div class="gallery-item" data-category="Photography" data-title="Country Pastels" data-tag="drones" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Country%20Pastels.jpg?w=800&h=600&fit=fill" alt="Country Pastels" loading="lazy">
 
                 <!-- Caption shown under the gallery image -->
                 <div class="item-caption">
-                    <div class="item-label">Wedding_by_the_Gondolas_cmr40p</div>
+                    <div class="item-label">Country Pastels</div>
+                    <div class="item-tag">drones</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: From The Backyard -->
+            <div class="gallery-item" data-category="Photography" data-title="From The Backyard" data-tag="drones" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/From%20The%20Backyard.jpg?w=800&h=600&fit=fill" alt="From The Backyard" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">From The Backyard</div>
+                    <div class="item-tag">drones</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Good Evening -->
+            <div class="gallery-item" data-category="Photography" data-title="Good Evening" data-tag="drones" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Good%20Evening.jpg?w=800&h=600&fit=fill" alt="Good Evening" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Good Evening</div>
+                    <div class="item-tag">drones</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Melbourne Sky High -->
+            <div class="gallery-item" data-category="Photography" data-title="Melbourne Sky High" data-tag="drones" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Melbourne%20Sky%20High.jpg?w=800&h=600&fit=fill" alt="Melbourne Sky High" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Melbourne Sky High</div>
+                    <div class="item-tag">drones</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Melbourne Skyline -->
+            <div class="gallery-item" data-category="Photography" data-title="Melbourne Skyline" data-tag="drones" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Melbourne%20Skyline.jpg?w=800&h=600&fit=fill" alt="Melbourne Skyline" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Melbourne Skyline</div>
+                    <div class="item-tag">drones</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Melbourne Traffic -->
+            <div class="gallery-item" data-category="Photography" data-title="Melbourne Traffic" data-tag="drones" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Melbourne%20Traffic.jpg?w=800&h=600&fit=fill" alt="Melbourne Traffic" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Melbourne Traffic</div>
+                    <div class="item-tag">drones</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Pastel Evenings -->
+            <div class="gallery-item" data-category="Photography" data-title="Pastel Evenings" data-tag="drones" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Pastel%20Evenings.jpg?w=800&h=600&fit=fill" alt="Pastel Evenings" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Pastel Evenings</div>
+                    <div class="item-tag">drones</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Sunset From The East -->
+            <div class="gallery-item" data-category="Photography" data-title="Sunset From The East" data-tag="drones" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Sunset%20From%20The%20East.jpg?w=800&h=600&fit=fill" alt="Sunset From The East" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Sunset From The East</div>
+                    <div class="item-tag">drones</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Sunset Tides -->
+            <div class="gallery-item" data-category="Photography" data-title="Sunset Tides" data-tag="drones" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Sunset%20Tides.jpg?w=800&h=600&fit=fill" alt="Sunset Tides" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Sunset Tides</div>
+                    <div class="item-tag">drones</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Waves by the Cape -->
+            <div class="gallery-item" data-category="Photography" data-title="Waves by the Cape" data-tag="drones" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Waves%20by%20the%20Cape.jpg?w=800&h=600&fit=fill" alt="Waves by the Cape" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Waves by the Cape</div>
+                    <div class="item-tag">drones</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: What It Was To Be -->
+            <div class="gallery-item" data-category="Photography" data-title="What It Was To Be" data-tag="drones" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/What%20It%20Was%20To%20Be.jpg?w=800&h=600&fit=fill" alt="What It Was To Be" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">What It Was To Be</div>
+                    <div class="item-tag">drones</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: A Flicker in the Darkness -->
+            <div class="gallery-item" data-category="Photography" data-title="A Flicker in the Darkness" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/A%20Flicker%20in%20the%20Darkness.jpg?w=800&h=600&fit=fill" alt="A Flicker in the Darkness" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">A Flicker in the Darkness</div>
                     <div class="item-tag">Landscapes</div>
                 </div>
             </div>
 
-            <!-- Gallery item: Winter_Solstice_2018_ckwdhc -->
-            <div class="gallery-item" data-category="photography" data-title="Winter_Solstice_2018_ckwdhc" data-tag="Landscapes" data-aspect="square">
-                <!-- Cloudinary URL with path-based transformations. -->
-                <img src="https://res.cloudinary.com/dhpyzfyge/image/upload/w_800,h_600,c_fit,q_auto,f_auto/v1777172785/Winter_Solstice_2018_ckwdhc.jpg" alt="Winter_Solstice_2018_ckwdhc" loading="lazy">
+            <!-- Gallery item: Amazing Clouds -->
+            <div class="gallery-item" data-category="Photography" data-title="Amazing Clouds" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Amazing%20Clouds.jpg?w=800&h=600&fit=fill" alt="Amazing Clouds" loading="lazy">
 
                 <!-- Caption shown under the gallery image -->
                 <div class="item-caption">
-                    <div class="item-label">Winter_Solstice_2018_ckwdhc</div>
+                    <div class="item-label">Amazing Clouds</div>
                     <div class="item-tag">Landscapes</div>
                 </div>
             </div>
 
-            <!-- Gallery item: Lion_of_Parliament_ur7xol -->
-            <div class="gallery-item" data-category="photography" data-title="Lion_of_Parliament_ur7xol" data-tag="Landscapes" data-aspect="square">
-                <!-- Cloudinary URL with path-based transformations. -->
-                <img src="https://res.cloudinary.com/dhpyzfyge/image/upload/w_800,h_600,c_fit,q_auto,f_auto/v1777172785/Lion_of_Parliament_ur7xol.jpg" alt="Lion_of_Parliament_ur7xol" loading="lazy">
+            <!-- Gallery item: Banff Skyline -->
+            <div class="gallery-item" data-category="Photography" data-title="Banff Skyline" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Banff%20Skyline.jpg?w=800&h=600&fit=fill" alt="Banff Skyline" loading="lazy">
 
                 <!-- Caption shown under the gallery image -->
                 <div class="item-caption">
-                    <div class="item-label">Lion_of_Parliament_ur7xol</div>
+                    <div class="item-label">Banff Skyline</div>
                     <div class="item-tag">Landscapes</div>
                 </div>
             </div>
 
-            <!-- Gallery item: Just_Walking_the_Dogs_hstfyo -->
-            <div class="gallery-item" data-category="photography" data-title="Just_Walking_the_Dogs_hstfyo" data-tag="Street Photography" data-aspect="square">
-                <!-- Cloudinary URL with path-based transformations. -->
-                <img src="https://res.cloudinary.com/dhpyzfyge/image/upload/w_800,h_600,c_fit,q_auto,f_auto/v1777172785/Just_Walking_the_Dogs_hstfyo.jpg" alt="Just_Walking_the_Dogs_hstfyo" loading="lazy">
+            <!-- Gallery item: Blue Morning Pier -->
+            <div class="gallery-item" data-category="Photography" data-title="Blue Morning Pier" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Blue%20Morning%20Pier.jpg?w=800&h=600&fit=fill" alt="Blue Morning Pier" loading="lazy">
 
                 <!-- Caption shown under the gallery image -->
                 <div class="item-caption">
-                    <div class="item-label">Just_Walking_the_Dogs_hstfyo</div>
-                    <div class="item-tag">Street Photography</div>
-                </div>
-            </div>
-
-            <!-- Gallery item: Enjoying_Life_pkdkvg -->
-            <div class="gallery-item" data-category="photography" data-title="Enjoying_Life_pkdkvg" data-tag="Street Photography" data-aspect="square">
-                <!-- Cloudinary URL with path-based transformations. -->
-                <img src="https://res.cloudinary.com/dhpyzfyge/image/upload/w_800,h_600,c_fit,q_auto,f_auto/v1777172785/Enjoying_Life_pkdkvg.jpg" alt="Enjoying_Life_pkdkvg" loading="lazy">
-
-                <!-- Caption shown under the gallery image -->
-                <div class="item-caption">
-                    <div class="item-label">Enjoying_Life_pkdkvg</div>
-                    <div class="item-tag">Street Photography</div>
-                </div>
-            </div>
-
-            <!-- Gallery item: Bridge_of_the_Evening_ghyrtt -->
-            <div class="gallery-item" data-category="photography" data-title="Bridge_of_the_Evening_ghyrtt" data-tag="Landscapes" data-aspect="square">
-                <!-- Cloudinary URL with path-based transformations. -->
-                <img src="https://res.cloudinary.com/dhpyzfyge/image/upload/w_800,h_600,c_fit,q_auto,f_auto/v1777172785/Bridge_of_the_Evening_ghyrtt.jpg" alt="Bridge_of_the_Evening_ghyrtt" loading="lazy">
-
-                <!-- Caption shown under the gallery image -->
-                <div class="item-caption">
-                    <div class="item-label">Bridge_of_the_Evening_ghyrtt</div>
+                    <div class="item-label">Blue Morning Pier</div>
                     <div class="item-tag">Landscapes</div>
                 </div>
             </div>
 
-            <!-- Gallery item: By_the_Pier_mzloze -->
-            <div class="gallery-item" data-category="photography" data-title="By_the_Pier_mzloze" data-tag="Landscapes" data-aspect="square">
-                <!-- Cloudinary URL with path-based transformations. -->
-                <img src="https://res.cloudinary.com/dhpyzfyge/image/upload/w_800,h_600,c_fit,q_auto,f_auto/v1777172785/By_the_Pier_mzloze.jpg" alt="By_the_Pier_mzloze" loading="lazy">
+            <!-- Gallery item: Bridge of the Evening -->
+            <div class="gallery-item" data-category="Photography" data-title="Bridge of the Evening" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Bridge%20of%20the%20Evening.jpg?w=800&h=600&fit=fill" alt="Bridge of the Evening" loading="lazy">
 
                 <!-- Caption shown under the gallery image -->
                 <div class="item-caption">
-                    <div class="item-label">By_the_Pier_mzloze</div>
+                    <div class="item-label">Bridge of the Evening</div>
                     <div class="item-tag">Landscapes</div>
                 </div>
             </div>
 
-            <!-- Gallery item: Blue_Morning_Pier_ljvitd -->
-            <div class="gallery-item" data-category="photography" data-title="Blue_Morning_Pier_ljvitd" data-tag="Landscapes" data-aspect="square">
-                <!-- Cloudinary URL with path-based transformations. -->
-                <img src="https://res.cloudinary.com/dhpyzfyge/image/upload/w_800,h_600,c_fit,q_auto,f_auto/v1777172785/Blue_Morning_Pier_ljvitd.jpg" alt="Blue_Morning_Pier_ljvitd" loading="lazy">
+            <!-- Gallery item: Busy Night in Venice -->
+            <div class="gallery-item" data-category="Photography" data-title="Busy Night in Venice" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Busy%20Night%20in%20Venice.jpg?w=800&h=600&fit=fill" alt="Busy Night in Venice" loading="lazy">
 
                 <!-- Caption shown under the gallery image -->
                 <div class="item-caption">
-                    <div class="item-label">Blue_Morning_Pier_ljvitd</div>
+                    <div class="item-label">Busy Night in Venice</div>
                     <div class="item-tag">Landscapes</div>
                 </div>
             </div>
 
-            <!-- Gallery item: Country_Pastels_m90teu -->
-            <div class="gallery-item" data-category="photography" data-title="Country_Pastels_m90teu" data-tag="Landscapes" data-aspect="square">
-                <!-- Cloudinary URL with path-based transformations. -->
-                <img src="https://res.cloudinary.com/dhpyzfyge/image/upload/w_800,h_600,c_fit,q_auto,f_auto/v1777172785/Country_Pastels_m90teu.jpg" alt="Country_Pastels_m90teu" loading="lazy">
+            <!-- Gallery item: By the Pier -->
+            <div class="gallery-item" data-category="Photography" data-title="By the Pier" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/By%20the%20Pier.jpg?w=800&h=600&fit=fill" alt="By the Pier" loading="lazy">
 
                 <!-- Caption shown under the gallery image -->
                 <div class="item-caption">
-                    <div class="item-label">Country_Pastels_m90teu</div>
+                    <div class="item-label">By the Pier</div>
                     <div class="item-tag">Landscapes</div>
                 </div>
             </div>
 
-            <!-- Gallery item: Crashing_Waters_of_Vesuvius_iymglm -->
-            <div class="gallery-item" data-category="photography" data-title="Crashing_Waters_of_Vesuvius_iymglm" data-tag="Landscapes" data-aspect="square">
-                <!-- Cloudinary URL with path-based transformations. -->
-                <img src="https://res.cloudinary.com/dhpyzfyge/image/upload/w_800,h_600,c_fit,q_auto,f_auto/v1777172785/Crashing_Waters_of_Vesuvius_iymglm.jpg" alt="Crashing_Waters_of_Vesuvius_iymglm" loading="lazy">
+            <!-- Gallery item: Capturing Beauty -->
+            <div class="gallery-item" data-category="Photography" data-title="Capturing Beauty" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Capturing%20Beauty.jpg?w=800&h=600&fit=fill" alt="Capturing Beauty" loading="lazy">
 
                 <!-- Caption shown under the gallery image -->
                 <div class="item-caption">
-                    <div class="item-label">Crashing_Waters_of_Vesuvius_iymglm</div>
+                    <div class="item-label">Capturing Beauty</div>
                     <div class="item-tag">Landscapes</div>
                 </div>
             </div>
 
-            <!-- Gallery item: Banff_Skyline_sc5sf8 -->
-            <div class="gallery-item" data-category="photography" data-title="Banff_Skyline_sc5sf8" data-tag="Landscapes" data-aspect="square">
-                <!-- Cloudinary URL with path-based transformations. -->
-                <img src="https://res.cloudinary.com/dhpyzfyge/image/upload/w_800,h_600,c_fit,q_auto,f_auto/v1777172785/Banff_Skyline_sc5sf8.jpg" alt="Banff_Skyline_sc5sf8" loading="lazy">
+            <!-- Gallery item: Cold Night -->
+            <div class="gallery-item" data-category="Photography" data-title="Cold Night" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Cold%20Night.jpg?w=800&h=600&fit=fill" alt="Cold Night" loading="lazy">
 
                 <!-- Caption shown under the gallery image -->
                 <div class="item-caption">
-                    <div class="item-label">Banff_Skyline_sc5sf8</div>
+                    <div class="item-label">Cold Night</div>
                     <div class="item-tag">Landscapes</div>
                 </div>
             </div>
 
-            <!-- Gallery item: A_Flicker_in_the_Darkness_jkyvyn -->
-            <div class="gallery-item" data-category="photography" data-title="A_Flicker_in_the_Darkness_jkyvyn" data-tag="Landscapes" data-aspect="square">
-                <!-- Cloudinary URL with path-based transformations. -->
-                <img src="https://res.cloudinary.com/dhpyzfyge/image/upload/w_800,h_600,c_fit,q_auto,f_auto/v1777172785/A_Flicker_in_the_Darkness_jkyvyn.jpg" alt="A_Flicker_in_the_Darkness_jkyvyn" loading="lazy">
+            <!-- Gallery item: Crashing Waters of Vesuvius -->
+            <div class="gallery-item" data-category="Photography" data-title="Crashing Waters of Vesuvius" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Crashing%20Waters%20of%20Vesuvius.jpg?w=800&h=600&fit=fill" alt="Crashing Waters of Vesuvius" loading="lazy">
 
                 <!-- Caption shown under the gallery image -->
                 <div class="item-caption">
-                    <div class="item-label">A_Flicker_in_the_Darkness_jkyvyn</div>
+                    <div class="item-label">Crashing Waters of Vesuvius</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Crosswalk of Flowers -->
+            <div class="gallery-item" data-category="Photography" data-title="Crosswalk of Flowers" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Crosswalk%20of%20Flowers.jpg?w=800&h=600&fit=fill" alt="Crosswalk of Flowers" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Crosswalk of Flowers</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Curiosity and the Tree -->
+            <div class="gallery-item" data-category="Photography" data-title="Curiosity and the Tree" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Curiosity%20and%20the%20Tree.jpg?w=800&h=600&fit=fill" alt="Curiosity and the Tree" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Curiosity and the Tree</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Daily Life -->
+            <div class="gallery-item" data-category="Photography" data-title="Daily Life" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Daily%20Life.jpg?w=800&h=600&fit=fill" alt="Daily Life" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Daily Life</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Enjoying Life -->
+            <div class="gallery-item" data-category="Photography" data-title="Enjoying Life" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Enjoying%20Life.jpg?w=800&h=600&fit=fill" alt="Enjoying Life" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Enjoying Life</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Enjoying Some Air -->
+            <div class="gallery-item" data-category="Photography" data-title="Enjoying Some Air" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Enjoying%20Some%20Air.jpg?w=800&h=600&fit=fill" alt="Enjoying Some Air" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Enjoying Some Air</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Fountain in Alice&#x27;s Garden -->
+            <div class="gallery-item" data-category="Photography" data-title="Fountain in Alice&#x27;s Garden" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Fountain%20in%20Alice%27s%20Garden.jpg?w=800&h=600&fit=fill" alt="Fountain in Alice&#x27;s Garden" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Fountain in Alice&#x27;s Garden</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Going For A Stroll -->
+            <div class="gallery-item" data-category="Photography" data-title="Going For A Stroll" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Going%20For%20A%20Stroll.jpg?w=800&h=600&fit=fill" alt="Going For A Stroll" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Going For A Stroll</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Gondolas -->
+            <div class="gallery-item" data-category="Photography" data-title="Gondolas" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Gondolas.jpg?w=800&h=600&fit=fill" alt="Gondolas" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Gondolas</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: He&#x27;s Always Around -->
+            <div class="gallery-item" data-category="Photography" data-title="He&#x27;s Always Around" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/He%27s%20Always%20Around.jpg?w=800&h=600&fit=fill" alt="He&#x27;s Always Around" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">He&#x27;s Always Around</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Huskie -->
+            <div class="gallery-item" data-category="Photography" data-title="Huskie" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Huskie.jpg?w=800&h=600&fit=fill" alt="Huskie" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Huskie</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Ice Cream Please -->
+            <div class="gallery-item" data-category="Photography" data-title="Ice Cream Please" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Ice%20Cream%20Please.jpg?w=800&h=600&fit=fill" alt="Ice Cream Please" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Ice Cream Please</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: It&#x27;s Been A While (Flinders St Station) -->
+            <div class="gallery-item" data-category="Photography" data-title="It&#x27;s Been A While (Flinders St Station)" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/It%27s%20Been%20A%20While%20%28Flinders%20St%20Station%29.jpg?w=800&h=600&fit=fill" alt="It&#x27;s Been A While (Flinders St Station)" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">It&#x27;s Been A While (Flinders St Station)</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: It&#x27;s Not The Point -->
+            <div class="gallery-item" data-category="Photography" data-title="It&#x27;s Not The Point" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/It%27s%20Not%20The%20Point.jpg?w=800&h=600&fit=fill" alt="It&#x27;s Not The Point" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">It&#x27;s Not The Point</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Just Walking the Dogs -->
+            <div class="gallery-item" data-category="Photography" data-title="Just Walking the Dogs" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Just%20Walking%20the%20Dogs.jpg?w=800&h=600&fit=fill" alt="Just Walking the Dogs" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Just Walking the Dogs</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Lion of Parliament -->
+            <div class="gallery-item" data-category="Photography" data-title="Lion of Parliament" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Lion%20of%20Parliament.jpg?w=800&h=600&fit=fill" alt="Lion of Parliament" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Lion of Parliament</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Love The Cloud Work -->
+            <div class="gallery-item" data-category="Photography" data-title="Love The Cloud Work" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Love%20The%20Cloud%20Work.jpg?w=800&h=600&fit=fill" alt="Love The Cloud Work" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Love The Cloud Work</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Marriage in Santorini -->
+            <div class="gallery-item" data-category="Photography" data-title="Marriage in Santorini" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Marriage%20in%20Santorini.jpg?w=800&h=600&fit=fill" alt="Marriage in Santorini" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Marriage in Santorini</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Midnight Lanterns -->
+            <div class="gallery-item" data-category="Photography" data-title="Midnight Lanterns" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Midnight%20Lanterns.jpg?w=800&h=600&fit=fill" alt="Midnight Lanterns" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Midnight Lanterns</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Mist Tide -->
+            <div class="gallery-item" data-category="Photography" data-title="Mist Tide" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Mist%20Tide.jpg?w=800&h=600&fit=fill" alt="Mist Tide" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Mist Tide</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: More Pearls -->
+            <div class="gallery-item" data-category="Photography" data-title="More Pearls" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/More%20Pearls.jpg?w=800&h=600&fit=fill" alt="More Pearls" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">More Pearls</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Morning Blues -->
+            <div class="gallery-item" data-category="Photography" data-title="Morning Blues" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Morning%20Blues.jpg?w=800&h=600&fit=fill" alt="Morning Blues" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Morning Blues</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Mt. Vesuvius -->
+            <div class="gallery-item" data-category="Photography" data-title="Mt. Vesuvius" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Mt.%20Vesuvius.jpg?w=800&h=600&fit=fill" alt="Mt. Vesuvius" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Mt. Vesuvius</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Nothing Like A Break -->
+            <div class="gallery-item" data-category="Photography" data-title="Nothing Like A Break" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Nothing%20Like%20A%20Break.jpg?w=800&h=600&fit=fill" alt="Nothing Like A Break" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Nothing Like A Break</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: NYC Clouds -->
+            <div class="gallery-item" data-category="Photography" data-title="NYC Clouds" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/NYC%20Clouds.jpg?w=800&h=600&fit=fill" alt="NYC Clouds" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">NYC Clouds</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Oh Cherry Tree -->
+            <div class="gallery-item" data-category="Photography" data-title="Oh Cherry Tree" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Oh%20Cherry%20Tree.jpg?w=800&h=600&fit=fill" alt="Oh Cherry Tree" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Oh Cherry Tree</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Parallel Alley -->
+            <div class="gallery-item" data-category="Photography" data-title="Parallel Alley" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Parallel%20Alley.jpg?w=800&h=600&fit=fill" alt="Parallel Alley" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Parallel Alley</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Parenting -->
+            <div class="gallery-item" data-category="Photography" data-title="Parenting" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Parenting.jpg?w=800&h=600&fit=fill" alt="Parenting" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Parenting</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Pearlescent -->
+            <div class="gallery-item" data-category="Photography" data-title="Pearlescent" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Pearlescent.jpg?w=800&h=600&fit=fill" alt="Pearlescent" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Pearlescent</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Pearly White -->
+            <div class="gallery-item" data-category="Photography" data-title="Pearly White" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Pearly%20White.jpg?w=800&h=600&fit=fill" alt="Pearly White" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Pearly White</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Reflections -->
+            <div class="gallery-item" data-category="Photography" data-title="Reflections" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Reflections.jpg?w=800&h=600&fit=fill" alt="Reflections" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Reflections</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Refreshing Greenery -->
+            <div class="gallery-item" data-category="Photography" data-title="Refreshing Greenery" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Refreshing%20Greenery.jpg?w=800&h=600&fit=fill" alt="Refreshing Greenery" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Refreshing Greenery</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Rolling Clouds On A Starry Night -->
+            <div class="gallery-item" data-category="Photography" data-title="Rolling Clouds On A Starry Night" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Rolling%20Clouds%20On%20A%20Starry%20Night.jpg?w=800&h=600&fit=fill" alt="Rolling Clouds On A Starry Night" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Rolling Clouds On A Starry Night</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Running In The Rain -->
+            <div class="gallery-item" data-category="Photography" data-title="Running In The Rain" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Running%20In%20The%20Rain.jpg?w=800&h=600&fit=fill" alt="Running In The Rain" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Running In The Rain</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Rustic Alleyway -->
+            <div class="gallery-item" data-category="Photography" data-title="Rustic Alleyway" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Rustic%20Alleyway.jpg?w=800&h=600&fit=fill" alt="Rustic Alleyway" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Rustic Alleyway</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Rusty Alleyway -->
+            <div class="gallery-item" data-category="Photography" data-title="Rusty Alleyway" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Rusty%20Alleyway.jpg?w=800&h=600&fit=fill" alt="Rusty Alleyway" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Rusty Alleyway</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Signs In Miniture But Not -->
+            <div class="gallery-item" data-category="Photography" data-title="Signs In Miniture But Not" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Signs%20In%20Miniture%20But%20Not.jpg?w=800&h=600&fit=fill" alt="Signs In Miniture But Not" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Signs In Miniture But Not</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Silhouettes -->
+            <div class="gallery-item" data-category="Photography" data-title="Silhouettes" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Silhouettes.jpg?w=800&h=600&fit=fill" alt="Silhouettes" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Silhouettes</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Simple Living -->
+            <div class="gallery-item" data-category="Photography" data-title="Simple Living" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Simple%20Living.jpg?w=800&h=600&fit=fill" alt="Simple Living" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Simple Living</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Soaking It In -->
+            <div class="gallery-item" data-category="Photography" data-title="Soaking It In" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Soaking%20It%20In.jpg?w=800&h=600&fit=fill" alt="Soaking It In" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Soaking It In</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Some Symmetry -->
+            <div class="gallery-item" data-category="Photography" data-title="Some Symmetry" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Some%20Symmetry.jpg?w=800&h=600&fit=fill" alt="Some Symmetry" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Some Symmetry</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Speak No Evil -->
+            <div class="gallery-item" data-category="Photography" data-title="Speak No Evil" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Speak%20No%20Evil.jpg?w=800&h=600&fit=fill" alt="Speak No Evil" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Speak No Evil</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Starry Night -->
+            <div class="gallery-item" data-category="Photography" data-title="Starry Night" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Starry%20Night.jpg?w=800&h=600&fit=fill" alt="Starry Night" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Starry Night</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Strange Parallels -->
+            <div class="gallery-item" data-category="Photography" data-title="Strange Parallels" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Strange%20Parallels.jpg?w=800&h=600&fit=fill" alt="Strange Parallels" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Strange Parallels</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Sunset at Santorini -->
+            <div class="gallery-item" data-category="Photography" data-title="Sunset at Santorini" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Sunset%20at%20Santorini.jpg?w=800&h=600&fit=fill" alt="Sunset at Santorini" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Sunset at Santorini</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Sunset Bridge -->
+            <div class="gallery-item" data-category="Photography" data-title="Sunset Bridge" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Sunset%20Bridge.jpg?w=800&h=600&fit=fill" alt="Sunset Bridge" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Sunset Bridge</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Supermoon Cloud -->
+            <div class="gallery-item" data-category="Photography" data-title="Supermoon Cloud" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Supermoon%20Cloud.jpg?w=800&h=600&fit=fill" alt="Supermoon Cloud" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Supermoon Cloud</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: TARDIS? -->
+            <div class="gallery-item" data-category="Photography" data-title="TARDIS?" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/TARDIS%3F.jpg?w=800&h=600&fit=fill" alt="TARDIS?" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">TARDIS?</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: The Duomo -->
+            <div class="gallery-item" data-category="Photography" data-title="The Duomo" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/The%20Duomo.jpg?w=800&h=600&fit=fill" alt="The Duomo" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">The Duomo</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Time For Walkies -->
+            <div class="gallery-item" data-category="Photography" data-title="Time For Walkies" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Time%20For%20Walkies.jpg?w=800&h=600&fit=fill" alt="Time For Walkies" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Time For Walkies</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Time To Loom -->
+            <div class="gallery-item" data-category="Photography" data-title="Time To Loom" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Time%20To%20Loom.jpg?w=800&h=600&fit=fill" alt="Time To Loom" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Time To Loom</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Tunes on a Cold Morning -->
+            <div class="gallery-item" data-category="Photography" data-title="Tunes on a Cold Morning" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Tunes%20on%20a%20Cold%20Morning.jpg?w=800&h=600&fit=fill" alt="Tunes on a Cold Morning" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Tunes on a Cold Morning</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: View From Above -->
+            <div class="gallery-item" data-category="Photography" data-title="View From Above" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/View%20From%20Above.jpg?w=800&h=600&fit=fill" alt="View From Above" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">View From Above</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Weathered -->
+            <div class="gallery-item" data-category="Photography" data-title="Weathered" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Weathered.jpg?w=800&h=600&fit=fill" alt="Weathered" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Weathered</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Wedding by the Gondolas -->
+            <div class="gallery-item" data-category="Photography" data-title="Wedding by the Gondolas" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Wedding%20by%20the%20Gondolas.jpg?w=800&h=600&fit=fill" alt="Wedding by the Gondolas" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Wedding by the Gondolas</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Wedding Cake -->
+            <div class="gallery-item" data-category="Photography" data-title="Wedding Cake" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Wedding%20Cake.jpg?w=800&h=600&fit=fill" alt="Wedding Cake" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Wedding Cake</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: What Once Was -->
+            <div class="gallery-item" data-category="Photography" data-title="What Once Was" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/What%20Once%20Was.jpg?w=800&h=600&fit=fill" alt="What Once Was" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">What Once Was</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Wings Spanned -->
+            <div class="gallery-item" data-category="Photography" data-title="Wings Spanned" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Wings%20Spanned.jpg?w=800&h=600&fit=fill" alt="Wings Spanned" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Wings Spanned</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Winnee -->
+            <div class="gallery-item" data-category="Photography" data-title="Winnee" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Winnee.jpg?w=800&h=600&fit=fill" alt="Winnee" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Winnee</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Winter Solstice 2018 -->
+            <div class="gallery-item" data-category="Photography" data-title="Winter Solstice 2018" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Winter%20Solstice%202018.jpg?w=800&h=600&fit=fill" alt="Winter Solstice 2018" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Winter Solstice 2018</div>
+                    <div class="item-tag">Landscapes</div>
+                </div>
+            </div>
+
+            <!-- Gallery item: Winter Soltice Fire -->
+            <div class="gallery-item" data-category="Photography" data-title="Winter Soltice Fire" data-tag="Landscapes" data-aspect="square">
+                <!-- Direct raw GitHub image URL. Spaces are encoded as %20. -->
+                <img src="https://raw.githubusercontent.com/adrianrtan/adrianrtan.github.io/main/Winter%20Soltice%20Fire.jpg?w=800&h=600&fit=fill" alt="Winter Soltice Fire" loading="lazy">
+
+                <!-- Caption shown under the gallery image -->
+                <div class="item-caption">
+                    <div class="item-label">Winter Soltice Fire</div>
                     <div class="item-tag">Landscapes</div>
                 </div>
             </div>
@@ -587,12 +1432,17 @@
                 <p>Whether it's capturing the quiet drama of a foggy coastline or the geometric beauty of a city from 400 feet up, I believe every frame should tell a story worth pausing for.</p>
                 <p>Available for commissions, collaborations, and the occasional adventure. Let's make something beautiful.</p>
             </div>
+            
+
+            <!--
             <div class="about-stats reveal">
                 <div class="stat"><div class="stat-number">5+</div><div class="stat-label">Years Shooting</div></div>
                 <div class="stat"><div class="stat-number">200+</div><div class="stat-label">Projects</div></div>
                 <div class="stat"><div class="stat-number">15k</div><div class="stat-label">Followers</div></div>
                 <div class="stat"><div class="stat-number">50+</div><div class="stat-label">Drone Flights</div></div>
             </div>
+            -->
+        
         </div>
     </section>
 
