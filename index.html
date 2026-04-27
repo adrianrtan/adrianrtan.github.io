@@ -415,10 +415,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 <button class="filter-btn" data-filter="work">Work</button>
             </div>
             <div class="layout-switcher">
-                <button class="layout-btn active" data-layout="grid" title="Grid View">
+                <button class="layout-btn" data-layout="grid" title="Grid View">
                     <svg viewBox="0 0 16 16"><rect x="1" y="1" width="6" height="6"/><rect x="9" y="1" width="6" height="6"/><rect x="1" y="9" width="6" height="6"/><rect x="9" y="9" width="6" height="6"/></svg>
                 </button>
-                <button class="layout-btn" data-layout="masonry" title="Masonry View">
+                <button class="layout-btn active" data-layout="masonry" title="Masonry View">
                     <svg viewBox="0 0 16 16"><rect x="1" y="1" width="6" height="9"/><rect x="9" y="1" width="6" height="5"/><rect x="1" y="12" width="6" height="3"/><rect x="9" y="8" width="6" height="7"/></svg>
                 </button>
                 <button class="layout-btn" data-layout="editorial" title="Editorial View">
@@ -1513,8 +1513,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         </div> <!--<div id="gallerySource" style="display:none;"> -->
 
-        <div id="gridContainer" class="gallery-grid gallery-container active"></div>
-        <div id="masonryContainer" class="gallery-masonry gallery-container"></div>
+        <div id="gridContainer" class="gallery-grid gallery-container"></div>
+        <div id="masonryContainer" class="gallery-masonry gallery-container active"></div>
         <div id="editorialContainer" class="gallery-editorial gallery-container"></div>
         <div class="gallery-count" id="galleryCount"></div>
     </section>
@@ -1591,7 +1591,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <!-- <p class="section-desc reveal">Available for collaborations and creative projects.</p> -->
         <a href="mailto:art@adrianrtan.com" class="contact-email reveal">art@adrianrtan.com</a>
         <div class="social-links reveal">
-            <a href="https://www.instagram.com/shug">Instagram</a><a href="https://x.com/adrianrtan">Twitter</a><a href="https://www.facebook.com/adrianrtanphotos/">Facebook</a>
+            <a href="https://www.instagram.com/shug" target="_blank">Instagram</a><a href="https://x.com/adrianrtan" target="_blank">Twitter</a><a href="https://www.facebook.com/adrianrtanphotos/" target="_blank">Facebook</a>
         </div>
     </section>
 
@@ -1643,7 +1643,7 @@ document.addEventListener("DOMContentLoaded", () => {
             editorial: document.getElementById('editorialContainer')
         };
 
-        let currentLayout = 'grid';
+        let currentLayout = 'masonry';
         let currentFilter = 'photography';
 
         // Clone images into each layout with appropriate sizing
